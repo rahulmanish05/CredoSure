@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>CREDOSURE</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Internal CSS -->
+   <style>
+ 
+/* About Us, Our Mission, Our Vision Containers */
+/* About Us, Our Mission, Our Vision Containers */
+.about-us-container,
+.our-mission-container,
+.our-vision-container {
+    background-color: #444;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer; /* Add pointer on hover */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Zoom and shadow effect on hover */
+.about-us-container:hover,
+.our-mission-container:hover,
+.our-vision-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+}
+
+/* Headings within the containers */
+.about-us-container h4,
+.our-mission-container h4,
+.our-vision-container h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(60, 179, 113, 0.2);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    letter-spacing: 1px; /* Spacing for better readability */
+    position: relative;
+}
+
+/* Paragraph styling (Visible by default) */
+.about-us-container p,
+.our-mission-container p,
+.our-vision-container p {
+    font-size: 1.1rem;
+    color: #f8f9fa;
+    line-height: 1.7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #555;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Paragraph hover effect */
+.about-us-container:hover p,
+.our-mission-container:hover p,
+.our-vision-container:hover p {
+    background-color: #333; /* Darker background on hover */
+    color: #3cb371; /* Green text on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+}
+
+/* Info box hover effects */
+.info_contact img,
+.social-box a img {
+    transition: transform 0.3s ease;
+}
+
+.info_contact img:hover,
+.social-box a img:hover {
+    transform: scale(1.2); /* Zoom effect for contact icons */
+}
+
+/* Button Styling for Newsletter Subscription */
+.info_link button {
+    background-color: #3cb371;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info_link button:hover {
+    background-color: #2e8b57;
+}
+
+/* Newsletter Input Field */
+.info_link input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 70%;
+    transition: box-shadow 0.3s ease;
+}
+
+.info_link input[type="email"]:focus {
+    box-shadow: 0 0 10px rgba(60, 179, 113, 0.5); /* Glow on focus */
+}
+
+/* Updated background for the about section to match h4 */
+/* Exact match for about section background to h4 */
+.about_section {
+    
+    padding: 50px 0;
+    color: white;
+    background-color:white;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+
+}
+
+.about_section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    animation: fadeIn 1s ease;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-us-container,
+    .our-mission-container,
+    .our-vision-container {
+        padding: 20px;
+    }
+
+    .about_section h2 {
+        font-size: 2rem;
+    }
+
+    .info_link input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.btn-primary {
+    background-color: black; /* Background color before hover */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Increased padding for a larger button */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Slightly more rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn-primary:hover {
+    background-color: #3cb371; /* Green background on hover */
+    transform: translateY(-5px) scale(1.05); /* Rise and zoom effect on hover */
+}
+
+
+
+
+  </style>
+ 
+</head>
+
+<body>
+  <!-- Header Section -->
+  <!-- Header Section -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <span>
+            CREDOSURE
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active ">
+                <a class="nav-link" href="about.html"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"> Services </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="start.html">
+                  <span>Start Now</span> <img src="#" alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: white;">
+                  <span>Contact Us</span> <img src="#" alt="" />
+                </a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about_section" id="about">
+    <div class="container">
+        <div class="heading_container">
+            <h2>About Us</h2>
+        </div>
+        
+        <div class="our-mission-container">
+            <h4>Our Mission</h4>
+            <p>
+                Our mission is to provide transparent and accessible credit solutions that enable individuals
+                and businesses to navigate their financial journeys with confidence. We strive to build
+                long-lasting relationships with our clients by offering personalized services that cater to
+                their unique needs.
+            </p>
+        </div>
+        <div class="our-vision-container">
+            <h4>Our Vision</h4>
+            <p>
+                Our vision is to be the most trusted and respected credit solutions provider, known for our
+                commitment to excellence, innovation, and customer satisfaction. We aim to create a positive
+                impact on the financial well-being of our clients and contribute to the overall growth and
+                stability of the economy.
+            </p>
+        </div>
+        <div class="about-us-container">
+          <h4>Our Promise</h4>
+          <p>
+            At Credosure, we promise to deliver reliable and transparent credit solutions tailored to your unique needs. 
+            We are dedicated to empowering our clients with the tools and knowledge required to navigate their financial journeys confidently.
+             Our commitment is to foster lasting relationships built on trust, integrity, and a shared vision of success. 
+             We strive to exceed expectations by providing exceptional service and support at every step, 
+            ensuring that your financial well-being is always our top priority.
+          </p>
+      </div>
+    </div>
+    <!-- Add this button after your content in the about section -->
+<div class="text-center mt-4">
+    <a href="service.html" class="btn btn-primary">Our Services</a>
+</div>
+
+</section>
+
+  <!-- Info Section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <div class="info_logo">
+              <a href="index.html"><span>CREDOSURE</span></a>
+            </div>
+            <h5>Contact Us</h5>
+            <div>
+              <img src="images/phone.png" width="18px" alt="Phone Icon" />
+              <p>+91 8220563218</p>
+            </div>
+            <div>
+              <img src="images/envelope.png" width="18px" alt="Email Icon" />
+              <p>credosure@gmail.com</p>
+            </div>
+            <div>
+              <img src="images/location.png" width="18px" alt="Location Icon" />
+              <p>
+                Entrepreneurship Development Cell, Sri Eshwar College of Engineering, Kondampatti (Post),
+                Vadasithur (Via), Kinathukadavu, Coimbatore - 641 202.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>Useful Links</h5>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Our Services</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="col-md-3">
+          <div class="social_container">
+            <h5>Follow Us</h5>
+            <div class="social-box">
+              <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subscribe to Newsletter -->
+        <div class="col-md-3">
+          <div class="info_link">
+            <h5>Subscribe to Our Newsletter</h5>
+            <p>Get the latest updates on financial tips and services directly in your inbox.</p>
+            <form action="#" method="post">
+              <input type="email" placeholder="Your Email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; 2023 All Rights Reserved <a href="index.html">CREDOSURE</a></p>
+    </div>
+  </footer>
+ 
+  <!-- jQuery and Bootstrap Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Owl Carousel Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

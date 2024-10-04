@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="CREDOSURE, financial coaching, credit card protection" />
+    <meta name="description" content="Contact Credosure for personalized financial services" />
+    <meta name="author" content="CREDOSURE" />
+    <title>CREDOSURE</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    
+    <!-- intl-tel-input CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+
+    <!-- Internal CSS -->
+    <style>
+        /* Your existing global styles remain the same */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .contact_container {
+            background-color: #f0f0f0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            max-width: 600px;
+            border: 2px solid #28a745;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for contact container */
+        .contact_container:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+        }
+
+        .contact_form button {
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact_form button:hover {
+            background-color: #3cb371;
+            transform: scale(1.05);
+        }
+
+        /* Original input field styles for name, email, and message */
+        .contact_form input:not(#phone),
+        .contact_form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #d4edda;
+            color: #333;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact_form input:not(#phone):hover,
+        .contact_form textarea:hover {
+            border-color: #28a745;
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+            transform: scale(1.02); /* Slight zoom on hover */
+        }
+
+        .contact_form input:not(#phone):focus,
+        .contact_form textarea:focus {
+            border-color: #28a745;
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+            outline: none;
+        }
+
+        /* Add margin below message box for gap */
+        .contact_form textarea {
+            margin-bottom: 30px; /* Creates gap between textarea and button */
+        }
+
+        /* Only for phone number field */
+     
+    /* Other styles remain the same */
+
+    /* About Section Heading */
+    /* About Section Heading */
+.heading_container {
+    margin-top: -60px; /* Decrease the space above the heading */
+    padding-top: 20px; /* Adjust padding if necessary */
+}
+
+.heading_container h2 {
+    font-size: 40px; /* Heading size */
+    padding: 1px 0; /* Padding around the heading */
+    text-align: center;
+    margin: 5px 0; /* Reduced margin below the heading */
+}
+
+
+    /* Contact Container */
+    .contact_container {
+        background-color: #f0f0f0;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        max-width: 600px;
+        border: 2px solid #28a745;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 30px; /* Added margin-top to create space between heading and container */
+    }
+
+    .contact_container:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+
+    /* Gap and transition for the phone number and message box */
+    .phone_number {
+        flex: 3;
+        margin-bottom: 30px; /* Adds space between phone number and message box */
+    }
+
+    /* Country code and phone number container */
+    .iti {
+        width: 100%;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        border-radius: 5px;
+    }
+
+    /* Styling the input field inside the phone container */
+    .iti input {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #d4edda;
+        color: #333;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover and focus effects for country code and phone input */
+    .iti:hover {
+        border-color: #28a745;
+        box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+        transform: scale(1.02); /* Slight zoom effect on hover */
+    }
+
+    .iti input:hover {
+        border-color: #28a745;
+        box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    }
+
+    .iti input:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+        outline: none;
+    }
+    .footer_section {
+            background-color: #000; /* Black background */
+            color: #f8f9fa; /* White text */
+            padding: 30px 0; /* Spacing */
+            text-align: center; /* Center text */
+        }
+
+        .footer_section .info_box {
+            margin: 10px 0; /* Margin for spacing */
+        }
+
+        .footer_section .info_box img {
+            vertical-align: middle; /* Align image with text */
+            margin-right: 10px; /* Space between image and text */
+        }
+
+        .footer_section p {
+            margin: 10px 0 0; /* Top margin only */
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 0.001cm; /* Adjusted margin to 0.5 cm */
+        }
+
+        .nav-link {
+            color: white !important;
+
+            
+        }
+       
+    .footer_section {
+        background-color: #000;
+        color: white;
+        padding: 40px 0;
+    }
+
+    .footer_section .contact_details {
+    display: flex;
+    justify-content: center; /* Center the items */
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.footer_section .info_box {
+    text-align: center;
+    flex: 1; /* Allow boxes to grow equally */
+    margin: 0 20px; /* Increased horizontal margin for spacing */
+}
+
+.footer_section .info_box img {
+    width: 40px;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.footer_section .info_box p {
+    font-size: 16px;
+    color: #fff;
+    margin: 3px 0; /* Added margin for spacing */
+}
+
+    .footer_section p {
+        text-align: center;
+        margin: 0;
+        color: #aaa;
+        margin-bottom: -80px;
+    }
+
+    .footer_section a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .footer_section a:hover {
+        color: #0056b3;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
+        margin: 0; /* Remove default margin */
+    }
+
+      
+       
+</style>
+
+   
+</head>
+
+<body>
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="index.html">
+                <span>
+                  CREDOSURE
+                </span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                  <ul class="navbar-nav  ">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="about.html"> About </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="service.html"> Services </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="start.html">
+                        <span>Start Now</span> <img src="#" alt="" />
+                      </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="contact.html" style="color: white;">
+                        <span>Contact Us</span> <img src="#" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="user_option">
+                    <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                      <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        
+        </header>
+        <!-- End Header Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact_section layout_padding">
+        <div class="heading_container">
+            <h2>Contact Us</h2>
+        </div>
+        <form action="/send" method="post">
+
+        <div class="container">
+            <div class="contact_container">
+                <div class="contact_form">
+                    <form action="#" method="post">
+                        <div>
+                            <input type="text" name="name" placeholder="Your Name" required />
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Your Email" required />
+                        </div>
+                        <div class="phone_container">
+                            <div class="phone_number">
+                                <input id="phone" type="tel" name="phone" placeholder="Your Phone Number" required />
+                            </div>
+                        </div>
+                        <div>
+                            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div></form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer_section">
+         <!-- Footer Section -->
+    <footer class="footer_section">
+        <div class="container">
+            <div class="contact_details">
+                <div class="info_box">
+                    <a href="tel:+918220563218">
+                        <img src="images/phone.png" alt="Phone Icon" />
+                        <p>+91 8220563218</p>
+                    </a>
+                </div>
+                <div class="info_box">
+                    <a href="mailto:credosure@gmail.com">
+                        <img src="images/envelope.png" alt="Email Icon" />
+                        <p>credosure@gmail.com</p>
+                    </a>
+                </div>
+                <div class="info_box">
+                    <a href="https://www.google.com/maps?q=Sri+Eshwar+College+of+Engineering,+Coimbatore+-+641202" target="_blank">
+                        <img src="images/location.png" alt="Location Icon" />
+                        <p>Sri Eshwar College of Engineering, Coimbatore - 641202</p>
+                    </a>
+                </div>
+            </div>
+            <p>&copy; 2023 All Rights Reserved <a href="index.html">CREDOSURE</a></p>
+        </div>
+    </footer>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- intl-tel-input JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <!-- Initialize intl-tel-input -->
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            initialCountry: "in", // Default country
+            separateDialCode: true, // Show separate country code
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
